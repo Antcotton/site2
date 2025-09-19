@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кадровый Ресурс - Удалённая работа</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://static.photos/office/1200x630/10');
+            background-size: cover;
+            background-position: center;
+        }
+        .testimonial-card {
+            min-width: 300px;
+        }
+        .scroll-container {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="scroll-container font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="bg-emerald-600 text-white font-bold text-xl px-3 py-2 rounded mr-2">КР</div>
+                <span class="text-xl font-bold text-gray-800">Кадровый Ресурс</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#vacancies" class="text-gray-700 hover:text-emerald-600 transition">Вакансии</a>
+                <a href="#why-us" class="text-gray-700 hover:text-emerald-600 transition">Почему мы</a>
+                <a href="#reviews" class="text-gray-700 hover:text-emerald-600 transition">Отзывы</a>
+                <a href="#contacts" class="text-gray-700 hover:text-emerald-600 transition">Контакты</a>
+            </nav>
+            <a href="https://t.me/HRRES_officialbot" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md font-medium transition flex items-center">
+                <i data-feather="send" class="mr-2"></i> Связаться с нами
+            </a>
+            <button class="md:hidden text-gray-700" id="menu-toggle">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="#vacancies" class="block py-2 text-gray-700 hover:text-emerald-600">Вакансии</a>
+            <a href="#why-us" class="block py-2 text-gray-700 hover:text-emerald-600">Почему мы</a>
+            <a href="#reviews" class="block py-2 text-gray-700 hover:text-emerald-600">Отзывы</a>
+            <a href="#contacts" class="block py-2 text-gray-700 hover:text-emerald-600">Контакты</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">Найдите работу мечты с «Кадровый Ресурс»</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Удалённые вакансии, стабильный доход и быстрый старт с 2017 года</p>
+            <a href="https://t.me/HRRES_officialbot" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-md font-medium text-lg inline-flex items-center transition" data-aos="fade-up" data-aos-delay="200">
+                <i data-feather="send" class="mr-2"></i> Связаться с нами
+            </a>
+        </div>
+    </section>
+
+    <!-- Vacancies Section -->
+    <section id="vacancies" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Актуальные вакансии</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Vacancy 1 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition" data-aos="fade-up">
+                    <div class="bg-emerald-600 text-white px-4 py-3">
+                        <h3 class="font-bold text-xl">Клиентский менеджер</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4"><i data-feather="dollar-sign" class="inline mr-2"></i> <span class="font-bold">60 000 ₽</span> + премия каждый месяц</p>
+                        <p class="text-gray-700 mb-4"><i data-feather="clock" class="inline mr-2"></i> Сдельная оплата: ~4 000 ₽ в день</p>
+                        <div class="bg-emerald-50 border-l-4 border-emerald-600 p-3 mb-4">
+                            <p class="text-emerald-800 font-medium">До <span class="font-bold">78 000 ₽</span> в месяц (на 30% больше!)</p>
+                        </div>
+                        <a href="https://t.me/HRRES_officialbot" target="_blank" class="block text-center bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md font-medium transition">
+                            Откликнуться
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Vacancy 2 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-emerald-600 text-white px-4 py-3">
+                        <h3 class="font-bold text-xl">Оператор колл-центра</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4"><i data-feather="dollar-sign" class="inline mr-2"></i> <span class="font-bold">80 000 ₽</span> + премия 450 ₽/час</p>
+                        <p class="text-gray-700 mb-4"><i data-feather="phone" class="inline mr-2"></i> Звонить по «тёплой базе»</p>
+                        <div class="bg-emerald-50 border-l-4 border-emerald-600 p-3 mb-4">
+                            <p class="text-emerald-800 font-medium">До <span class="font-bold">104 000 ₽</span> + премия (30% больше!)</p>
+                        </div>
+                        <a href="https://t.me/HRRES_officialbot" target="_blank" class="block text-center bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md font-medium transition">
+                            Откликнуться
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Vacancy 3 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-emerald-600 text-white px-4 py-3">
+                        <h3 class="font-bold text-xl">Менеджер Telegram-каналов</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4"><i data-feather="dollar-sign" class="inline mr-2"></i> <span class="font-bold">55 000 ₽</span> + бонусы</p>
+                        <p class="text-gray-700 mb-4"><i data-feather="send" class="inline mr-2"></i> Ведение и продвижение каналов</p>
+                        <div class="bg-emerald-50 border-l-4 border-emerald-600 p-3 mb-4">
+                            <p class="text-emerald-800 font-medium">До <span class="font-bold">71 500 ₽</span> (благодаря нам - на 30% больше!)</p>
+                        </div>
+                        <a href="https://t.me/HRRES_officialbot" target="_blank" class="block text-center bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md font-medium transition">
+                            Откликнуться
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Vacancy 4 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-emerald-600 text-white px-4 py-3">
+                        <h3 class="font-bold text-xl">Контент-менеджер маркетплейсов</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4"><i data-feather="dollar-sign" class="inline mr-2"></i> <span class="font-bold">50 000 ₽</span> + бонусы</p>
+                        <p class="text-gray-700 mb-4"><i data-feather="shopping-cart" class="inline mr-2"></i> Работа с Ozon, Wildberries</p>
+                        <div class="bg-emerald-50 border-l-4 border-emerald-600 p-3 mb-4">
+                            <p class="text-emerald-800 font-medium">До <span class="font-bold">65 000 ₽</span> (30% больше!)</p>
+                        </div>
+                        <a href="https://t.me/HRRES_officialbot" target="_blank" class="block text-center bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md font-medium transition">
+                            Откликнуться
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IP Help Section -->
+    <section id="why-us" class="py-16 bg-emerald-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-emerald-600 text-white p-8 flex items-center justify-center">
+                        <i data-feather="file-text" class="w-16 h-16"></i>
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Помощь с оформлением ИП на НПД</h3>
+                        <p class="text-gray-700 mb-6">Мы бесплатно помогаем оформить ИП на НПД. Это повышает вашу зарплату до 30%(!) и увеличивает шансы трудоустройства.</p>
+                        <a href="https://msp03.ru/news/samozanyatye/ip-na-npd-sleduyushchiy-uroven-razvitiya-dlya-samozanyatykh/" target="_blank" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-md font-medium transition">
+                            Узнать подробнее:
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Нам доверяют</h2>
+            
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="p-6" data-aos="fade-up">
+                    <div class="text-4xl font-bold text-emerald-400 mb-2">2017</div>
+                    <p class="text-gray-300">Работаем с</p>
+                </div>
+                <div class="p-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl font-bold text-emerald-400 mb-2">500+</div>
+                    <p class="text-gray-300">Трудоустроили в Яндекс</p>
+                </div>
+                <div class="p-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl font-bold text-emerald-400 mb-2">340</div>
+                    <p class="text-gray-300">В IT и Ozon за 4 месяца</p>
+                </div>
+                <div class="p-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-4xl font-bold text-emerald-400 mb-2">№1</div>
+                    <p class="text-gray-300">Лучший показатель среди агентств</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Отзывы наших сотрудников</h2>
+            
+            <div class="relative">
+                <div class="overflow-x-auto pb-6 scrollbar-hide">
+                    <div class="flex space-x-6" id="reviews-carousel">
+                        <!-- Review 1 -->
+                        <div class="testimonial-card bg-gray-50 rounded-lg p-6 shadow-md flex-shrink-0">
+                            <div class="flex items-center mb-4">
+                                <img src="http://static.photos/people/200x200/1" alt="Анна" class="w-12 h-12 rounded-full mr-4">
+                                <div>
+                                    <h4 class="font-bold">Анна</h4>
+                                    <p class="text-gray-600 text-sm">Оператор колл-центра</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700">"Спасибо «Кадровый Ресурс»! Нашла работу за 3 дня, доход выше, чем ожидала."</p>
+                            <div class="mt-4 text-emerald-600">
+                                <i data-feather="star" class="inline"></i>
+                                <i data-feather="star" class="inline"></i>
+                                <i data-feather="star" class="inline"></i>
+                                <i data-feather="star" class="inline"></i>
+                                <i data-feather="star" class="inline"></i>
+                            </div>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="testimonial-card bg-gray-50 rounded-lg p-6 shadow-md flex-shrink-0">
+                            <div class="flex items-center mb-4">
+                                <img src="http://static.photos/people/200x200/2" alt="Иван" class="w-12 h-12 rounded-full mr-4">
+                                <div>
+                                    <h4 class="font-bold">Иван</h4>
+                                    <p class="text-gray-600 text-sm">Клиентский менеджер</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700">"Работаю уже год, всё прозрачно, выплаты вовремя. Зарплата действительно выше рынка."</p>
+                            <div class="mt-4 text-emerald-600">
+                                <i data-feather="star" class="inline"></i>
+                                <i data-feather="star" class="inline"></i>
+                                <i data-feather="star" class="inline"></i>
+                                <i data-feather="star" class="inline"></i>
+                                <i data-feather="star" class="inline"></i>
+                            </div>
+                        </div>
+
+                        <!-- Review 3 -->
+                        <div class="testimonial-card bg-gray-50 rounded-lg p-6 shadow-md flex-shrink-0">
+                            <div class="flex items-center mb-4">
+                                <img src="http://static.photos/people/200x200/3" alt="Елена" class="w-12 h-12 rounded-full mr-4">
+                                <div>
+                                    <h4 class="font-bold">Елена</h4>
+                                    <p class="text-gray-600 text-sm">Менеджер Telegram-каналов</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700">"Помогли с оформлением ИП, теперь получаю на 30% больше. Очень довольна!"</p>
+                            <div class="mt-4 text-emerald-600">
+                                <i data-feather="star" class="inline"></i>
+                                <i data-feather="star" class="inline"></i>
+                                <i data-feather="star" class="inline"></i>
+                                <i data-feather="star" class="inline"></i>
+                                <i data-feather="star" class="inline"></i>
+                            </div>
+                        </div>
+
+                        <!-- Review 4 -->
+                        <div class="testimonial-card bg-gray-50 rounded-lg p-6 shadow-md flex-shrink-0">
+                            <div class="flex items-center mb-4">
+                                <img src="http://static.photos/people/200x200/4" alt="Дмитрий" class="w-12 h-12 rounded-full mr-4">
+                                <div>
+                                    <h4 class="font-bold">Дмитрий</h4>
+                                    <p class="text-gray-600 text-sm">Контент-менеджер</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700">"Удобный график, адекватные задачи. Работаю удалённо из любого города."</p>
+                            <div class="mt-4 text-emerald-600">
+                                <i data-feather="star" class="inline"></i>
+                                <i data-feather="star" class="inline"></i>
+                                <i data-feather="star" class="inline"></i>
+                                <i data-feather="star" class="inline"></i>
+                                <i data-feather="star" class="inline"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-emerald-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Готовы начать работать?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Отправьте заявку прямо сейчас и получите работу мечты уже на этой неделе!</p>
+            <a href="https://t.me/HRRES_officialbot" target="_blank" class="bg-white hover:bg-gray-100 text-emerald-600 px-8 py-3 rounded-md font-medium text-lg inline-flex items-center transition">
+                <i data-feather="send" class="mr-2"></i> Связаться с нами
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacts" class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="md:flex md:justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-emerald-600 text-white font-bold text-xl px-3 py-2 rounded mr-2">КР</div>
+                        <span class="text-xl font-bold">Кадровый Ресурс</span>
+                    </div>
+                    <p class="text-gray-400">Трудоустройство с 2017 года</p>
+                </div>
+                
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-lg font-bold mb-4">Контакты</h3>
+                    <p class="text-gray-400 mb-2"><i data-feather="mail" class="inline mr-2"></i> kadresurs@atomicmail.io</p>
+                    <p class="text-gray-400"><i data-feather="phone" class="inline mr-2"></i> +7 (995) 269 10 93</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Быстрые ссылки</h3>
+                    <a href="https://t.me/HRRES_officialbot" target="_blank" class="block bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-md font-medium transition text-center mb-4">
+                        Связаться с нами
+                    </a>
+                    <div class="flex space-x-4 justify-center">
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>© 2018 «Кадровый Ресурс». Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Simple carousel animation
+        let currentPosition = 0;
+        const carousel = document.getElementById('reviews-carousel');
+        
+        function moveCarousel() {
+            currentPosition -= 1;
+            carousel.style.transform = `translateX(${currentPosition}px)`;
+            
+            if (currentPosition < -300) {
+                currentPosition = 0;
+            }
+            
+            requestAnimationFrame(moveCarousel);
+        }
+        
+        // Start animation only on desktop
+        if (window.innerWidth > 768) {
+            requestAnimationFrame(moveCarousel);
+        }
+    </script>
+</body>
+</html>
